@@ -1,0 +1,33 @@
+@import 'neat';
+
+@import 'font';
+
+body {
+  font-family: 'IBMPlexSerif';
+  padding-top: 1rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  @include grid-container;
+}
+
+.title {
+  text-align: center;
+}
+
+.col {
+  @include grid-column(4);
+}
+
+.image {
+  @include grid-column(2);
+  @include grid-push(5);
+  margin-bottom: 1rem;
+
+  img {
+    border-radius: 1rem;
+    width: 100%;
+  }
+}
